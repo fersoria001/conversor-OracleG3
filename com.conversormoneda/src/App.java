@@ -9,7 +9,7 @@ import conversormoneda.model.menuPrincipal;
 /**
  * App
  */
-public class App extends Entrada {
+public class App {
 
     public static void main(String[] args) {
     boolean iniciar = true;
@@ -28,9 +28,9 @@ public class App extends Entrada {
             String numero;
             do
             {
-                numero = pedirInput();
+                numero = Entrada.pedirInput();
             }
-            while(!isNumeric(numero));
+            while(!Entrada.isNumeric(numero));
             Double valor = Double.parseDouble(numero);
             Object origen = JOptionPane.showInputDialog(
                 null, 
@@ -102,11 +102,12 @@ public class App extends Entrada {
             JOptionPane.showMessageDialog(null, "Extra no implementado");
         }
         int continuar = JOptionPane.showConfirmDialog(null, "Do you want to convert another currency?");
-        if(JOptionPane.OK_OPTION == continuar){
-            System.out.println("elprogramacontinuo");
+        if(JOptionPane.OK_OPTION == continuar)
+        {
+            iniciar = true;
         } else {
             iniciar = false;
-            JOptionPane.showConfirmDialog(null, "Goodbye!");
+            JOptionPane.showMessageDialog(null, "Goodbye!");
         }
     } while (iniciar);
     } 
