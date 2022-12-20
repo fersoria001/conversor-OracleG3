@@ -1,4 +1,4 @@
-package conversormoneda.model;
+package conversormoneda.moneda;
 
 public class menuConversion {
     public static   String titulo = "Divisas";

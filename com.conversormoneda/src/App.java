@@ -1,9 +1,9 @@
 import javax.swing.JOptionPane;
 
-import conversormoneda.model.Conversiones;
-import conversormoneda.model.Entrada;
-import conversormoneda.model.menuConversion;
-import conversormoneda.model.menuPrincipal;
+import conversormoneda.moneda.Conversiones;
+import conversormoneda.moneda.Entrada;
+import conversormoneda.moneda.menuConversion;
+import conversormoneda.moneda.menuPrincipal;
 
 
 /**
