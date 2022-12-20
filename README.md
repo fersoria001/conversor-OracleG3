@@ -19,31 +19,33 @@
 *[Personas-Desarrolladores del Proyecto](#personas-desarrolladores)
 
 
-#descripción-del-proyecto
 
 
+<a name="descripción-del-proyecto"></a>
+# Descripcion
 Aplicacion basica de escritorio que convierte monedas y temperaturas con fines educativos para el programa OracleNext
 
-
-#Estado-del-proyecto
+<a name="Estado-del-proyecto"></a>
+#Estado del proyecto.
 
 Finalizado.
 
-#Características-de-la-aplicación
+<a name="Características-de-la-aplicación"></a>
+#Caracteristicas de la aplicacion
 Son multiples ventanas, las tasas de conversion son estaticas.
 La app no genera una nueva ventana en la barra de tareas
 si no la encuentras minimiza el resto de aplicaciones.
 
-
-#acceso-proyecto
+<a name="acceso-proyecto"></a>
+#Acceso al proyecto.
 
 Puede utilizarse desde el repositorio, incluire un .jar ejecutable que pueda descargarse como
 Conversor.jar y ejecutarse con la JVM haciendo doble click.
-
-#tecnologías-utilizadas
+<a name="tecnologías-utilizadas"></a>
+#Tecnologias utilizadas
 Java
 Librerias Javax.Swing
 
-
-#personas-desarrolladores
+<a name="personas-desarrolladores"></a>
+#Desarrollado Por
 Fernando Agustin Soria.
