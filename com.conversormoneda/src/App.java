@@ -1,5 +1,7 @@
 import javax.swing.JOptionPane;
 
+import conversormedidas.temperaturas.ConversionMedidas;
+import conversormedidas.temperaturas.MenuMedidas;
 import conversormoneda.moneda.Conversiones;
 import conversormoneda.moneda.Entrada;
 import conversormoneda.moneda.menuConversion;
@@ -97,10 +99,46 @@ public class App {
                 }
 
             }
-        } else {
-            iniciar = false;
-            JOptionPane.showMessageDialog(null, "Extra no implementado");
         }
+        
+        
+
+
+
+        else 
+        {
+            iniciar = true;
+            String numero;
+            do
+            {
+                numero = Entrada.pedirInput();
+            }
+            while(!Entrada.isNumeric(numero));
+            Double valor = Double.parseDouble(numero);
+            Object origen = JOptionPane.showInputDialog(
+                null, 
+                MenuMedidas.mensaje,
+                MenuMedidas.titulo,
+                JOptionPane.QUESTION_MESSAGE,
+                null,
+                MenuMedidas.opciones,
+                MenuMedidas.opciones[0]);
+            ConversionMedidas conversion = new ConversionMedidas();
+            switch((String)origen)
+            {
+                case "Fahrenheit a Celsius":
+                {
+                    conversion.fahrenheitACelsius(valor);
+                    break;
+                }
+                case "Celsius a Fahrenheit":
+                {
+                    conversion.celsiusAFahrenheit(valor);
+                    break;
+                }
+        }}
+
+
         int continuar = JOptionPane.showConfirmDialog(null, "Do you want to convert another currency?");
         if(JOptionPane.OK_OPTION == continuar)
         {
